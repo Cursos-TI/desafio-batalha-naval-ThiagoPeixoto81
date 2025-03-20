@@ -12,6 +12,8 @@ int main() {
     int tabuleiro[10][10] = {{0}};
     int navio1[3] = {3, 3, 3};
     int navio2[3] = {3, 3, 3};
+    int navio3[3] = {3, 3, 3};
+    int navio4[3] = {3, 3, 3};
 
     //Posicionando o navio 1 na linha 3 e coluna 5
     int linha = 2;
