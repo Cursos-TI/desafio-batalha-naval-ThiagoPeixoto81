@@ -27,6 +27,20 @@ int main() {
         tabuleiro[vertical+7][coluna] = navio1[vertical];
     }
 
+    //Posicionando o navio 3 na linha 10 e coluna 1
+    int linhaDiagonal = 9;
+    int colunaDiagonal = 0;
+    for (int diagonal1 = 0; diagonal1 < 3; diagonal1++){
+        tabuleiro[linhaDiagonal-diagonal1][colunaDiagonal+diagonal1] = navio1[diagonal1];
+    }
+
+    //Posicionando o navio 4 na linha 5 e coluna 7
+    int linhaDiagonal2 = 4;
+    int colunaDiagonal2 = 6;
+    for (int diagonal2 = 0; diagonal2 < 3; diagonal2++){
+        tabuleiro[linhaDiagonal2+diagonal2][colunaDiagonal2-diagonal2] = navio1[diagonal2];
+    }
+
     //Exibindo matriz
     for (int vertical = 0; vertical < 10; vertical++){
         for (int horizontal = 0; horizontal < 10; horizontal++){
